@@ -3,15 +3,15 @@
 <p>
     <%= homeStartingContent %> 
 </p>
-<% for(var i =0;i<posts.length;i++) { %> 
+<% posts.forEach(post => { %>
     <div>
         <h1>
-            <%= posts[i].title %> 
+            <%= post.title %> 
         </h1>
         <p>
-           <%= posts[i].body %>  
+           <%= post.body %>  
         </p>
     </div>
-<%}%>
+<% }); %> 
 
 <%- include("partials/footer") %> 
